@@ -1,0 +1,11 @@
+{
+    "name": "The_Grizzly",
+    "version_number": "1.1.2",
+    "website_url": "https://github.com/luuhoo/talkingbear",
+    "description": "Adds a talking Grizzly card to Act 1, with subtle lore. Works best when paired with Jackalope and Raven!",
+    "dependencies": [
+      "BepInEx-BepInExPack_Inscryption-5.4.1901",
+      "API_dev-API-2.9.1",
+      "MADH95Mods-JSONCardLoader-2.3.0"
+    ]
+}

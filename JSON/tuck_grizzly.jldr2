@@ -1,0 +1,29 @@
+{
+  "name": "tuck_grizzly",
+  "modPrefix": "tuck",
+  "displayedName": "Tuck",
+  "description": "A particularly monstrous Grizzly. His barbarism shant be confused with efficacy.",
+  "metaCategories": [
+    "ChoiceNode",
+    "TraderOffer"
+  ],
+  "cardComplexity": "Vanilla",
+  "temple": "Nature",
+  "baseAttack": 5,
+  "baseHealth": 4,
+  "bloodCost": 3,
+  "tribes": [],
+  "traits": [
+    "DeathcardCreationNonOption"
+  ],
+  "abilities": [
+    "StrafePush"
+  ],
+  "specialAbilities": [
+    "TalkingCardChooser"
+  ],
+  "onePerDeck": true,
+  "flipPortraitForStrafe": false,
+  "tailName": "Tail_Furry",
+  "pixelTexture": "luu_grizzly_pixelsprite.png"
+}

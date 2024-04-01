@@ -1,0 +1,9 @@
+{
+  "decks": [
+    {
+      "name": "Rip & Tear",
+      "iconTexture": "tuck_doomguy.png",
+      "cards": [ "tuck_grizzly", "hodag", "wolf", "goat, ]
+    }
+  ]
+}

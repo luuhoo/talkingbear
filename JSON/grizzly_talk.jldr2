@@ -1,0 +1,355 @@
+{
+  "cardName": "tuck_grizzly",
+  "faceSprite": "face.png",
+  "eyeSprites": {
+    "open": "t_neutral_eye_open.png",
+    "closed": "t_neutral_eye_closed.png"
+  },
+  "mouthSprites": {
+    "open": "t_neutral_mouth_open.png",
+    "closed": "t_neutral_mouth_closed.png"
+  },
+  "emissionSprite": "t_neutral_emission.png",
+  "faceInfo": {
+    "blinkRate": 1.5,
+    "voiceId": "female1_voice",
+    "voiceSoundPitch": 0.5
+  },
+  "emotions": [
+    {
+      "emotion": "Anger",
+      "eyeSprites": {
+        "open": "t_angry_eye_open.png",
+        "closed": "t_angry_eye_closed.png"
+      },
+      "mouthSprites": {
+        "open": "t_angry_mouth_open.png",
+        "closed": "t_angry_mouth_closed.png"
+      },
+      "emissionSprite": "t_angry_emission.png"
+    },
+    {
+      "emotion": "Quiet",
+      "eyeSprites": {
+        "open": "t_quiet_eye_open.png",
+        "closed": "t_quiet_eye_closed.png"
+      },
+      "mouthSprites": {
+        "open": "t_angry_mouth_open.png",
+        "closed": "t_angry_mouth_closed.png"
+      },
+      "emissionSprite": "t_quiet_emission.png"
+    },
+    {
+      "emotion": "Laughter",
+      "eyeSprites": {
+        "open": "t_laughter_eye_open.png",
+        "closed": "t_laughter_eye_closed.png"
+      },
+      "mouthSprites": {
+        "open": "t_neutral_mouth_open.png",
+        "closed": "t_neutral_mouth_closed.png"
+      },
+      "emissionSprite": "t_laughter_emission"
+    },
+    {
+      "emotion": "Surprise",
+      "eyeSprites": {
+        "open": "t_surprised_eye_open.png",
+        "closed": "t_surprised_eye_closed.png"
+      },
+      "mouthSprites": {
+        "open": "t_surprised_mouth_open.png",
+        "closed": "t_surprised_mouth_closed.png"
+      },
+      "emissionSprite": "t_surprised_emission.png"
+    }
+  ],
+  "dialogueEvents": [
+    {
+      "eventName": "OnDrawn",
+      "mainLines": [
+        "[e:surprise]Это очень ярко…[c:][w:1] Oh!",
+        "[e:laughter][w:0.5]Привет! Hello!",
+        "[e:neutral] I am Так - ",
+        "Tuck, for you Human-Speakers.",
+        "I am student of [w:1][c:dSG]Lady Astrella.",
+        "[c:][w:1]Perhaps you have seen her?",
+        "[e:laughter]No bother.",
+        "[e:laughter]We will find her together, yes?"
+      ],
+      "repeatLines": [
+        [
+          "[e:neutral]Медведь пришёл!"
+        ],
+        [
+          "[e:laughter]This bear will strike!"
+        ],
+        [
+          "[e:quiet]Луна, благослови меня..."
+        ],
+        [
+          "[e:anger]Леший! We will win fight."
+        ],
+        [
+          "[e:anger]My claws are ready!"
+        ]
+      ]
+    },
+    {
+      "eventName": "OnPlayFromHand",
+      "mainLines": [
+        "This is smart. [w:1]Smart move.",
+        "[w:1]Keep making these moves, yes?"
+      ],
+      "repeatLines": [
+        [
+          "Onward!"
+        ],
+        [
+          "[e:laughter]You are good tactician."
+        ],
+        [
+          "[e:anger]В бой!"
+        ],
+        [
+          "[e:neutral]Maybe after this,",
+          "[e:laughter]We train together, yes?",
+          "[e:laughter]I will train you",
+          "[e:laughter]to be very strong!",
+          "[e:laughter]Strong like [w:1]bear, [w:1]even! Haha!"
+        ]
+      ]
+    },
+    {
+      "eventName": "ProspectorBoss",
+      "mainLines": [
+        "[e:surprise]What is this?",
+        "[e:surprise]A mine? Quarry?",
+        "[e:neutral]Сэр, you have license?",
+        "[e:anger]Forest does not belong to [c:o]you."
+      ],
+      "repeatLines": [
+        [
+          "[e:anger]Ugh."
+        ],
+        [
+          "[e:neutral]What is called...[w:2]Старатель?"
+        ],
+        [
+          "[e:surprise]I will admit.",
+          "[e:surprise]Сэр has talent.",
+          "[e:laughter]Acting is not easy!"
+        ]
+      ]
+    },
+    {
+      "eventName": "AnglerBoss",
+      "mainLines": [
+        "[e:surprise]Ебена мать...",
+        "[e:surprise]Fish! There is food! [w:1.3]Wait-",
+        "[e:anger]These fish are rot. You did not eat?![leshy:Only catch bad fish. No good fish.]",
+        "[e:anger]Their lives wasted! Souls spoiled!"
+      ],
+      "repeatLines": [
+        [
+          "[e:anger]The fish-waster...!"
+        ],
+        [
+          "[e:anger]If he sets bait in my way,",
+          "[e:anger]I will break it, [w:0.8][c:r]throw it back,",
+          "[e:anger][c:r]and rip the throats from the sharks!"
+        ],
+        [
+          "[e:anger]I shall gut you like a salmon!"
+        ],
+        [
+          "[e:anger]I dislike this fight."
+        ],
+        [
+          "[e:neutral]When was that hook sharpened?"
+        ],
+        [
+          "[e:quiet]Now, I am hungry."
+        ]
+      ]
+    },
+    {
+      "eventName": "TrapperTraderBoss",
+      "mainLines": [
+        "[e:surprise]Trader, is it?",
+        "[e:surprise]Do you sell",
+        "[e:surprise]Rope?[leshy:Hm? Pardon me?][w:1.3]",
+        "[e:laughter]Oh! [w:2][e:anger]Because I will tie you",
+        "[e:anger][c:r]like a roast, and throw your",
+        "[e:anger][c:r]squirming body upon a pyre!"
+      ],
+      "repeatLines": [
+        [
+          "[e:anger]..."
+        ],
+        [
+          "[e:anger][c:r]I have said all I have wished."
+        ],
+        [
+          "[e:anger]My pelt is mine to wear!"
+        ]
+      ]
+    },
+    {
+      "eventName": "LeshyBoss",
+      "mainLines": [
+        "[e:anger][c:r]Друид![w:0.5] I have come",
+        "[e:anger][c:r]to dig my claws",
+        "[e:anger][c:r]upon your ribs,",
+        "[e:anger][c:r]and rip into your flesh!"
+      ],
+      "repeatLines": [
+        [
+          "[e:anger][c:r]You cannot win this time."
+        ],
+        [
+          "[e:anger][c:r]You disgust me."
+        ],
+        [
+          "[e:anger][c:r]You manipulate the moon,",
+          "[e:anger][c:r]you manipulate fates -",
+          "[e:anger][c:r]yet call [w:0.5]US [w:0.5]the beasts?!"
+        ]
+      ]
+    },
+    {
+      "eventName": "OnAttacked",
+      "mainLines": [
+        "[e:neutral]My blood does not spill?",
+        "[e:neutral]At least this new body",
+        "[e:neutral]has some good things."
+      ],
+      "repeatLines": [
+        [
+          "[e:neutral]Lady Astrella protect me."
+        ],
+        [
+          "[e:neutral]I almost felt that one!"
+        ],
+        [
+          "[e:anger][c:r]Pathetic! [w:1]You festering pustule!"
+        ]
+      ]
+    },
+    {
+      "eventName": "OnBecomeSelectablePositive",
+      "mainLines": [
+        "[e:surprise]Странный.",
+        "[e:surprise]These stones look [w:1]familiar.",
+        "[e:quiet]...[w:1]Did he...?"
+      ],
+      "repeatLines": [
+        [
+          "[e:laughter]Let us indulge a little bit."
+        ],
+        [
+          "[e:laughter]I will carry us to victory,",
+          "[e:laughter]should you imbue my spirit!"
+        ],
+        [
+          "[e:laughter]Am I your choice?"
+        ]
+      ]
+    },
+    {
+      "eventName": "RoyalBoss",
+      "mainLines": [
+        "[e:surprise]What is this?!",
+        "[e:surprise]Королевский?!",
+        "[e:laughter]Oh, I have heard of you",
+        "[e:laughter]since I was a cub!",
+        "[e:laughter][c:r]I will cherish",
+        "[e:laughter][c:r]when I gnaw upon your marrow."
+      ],
+      "repeatLines": [
+        [
+          "[e:neutral][c:r]Oh, good!",
+          "[e:neutral][c:r]I was getting bored."
+        ],
+        [
+          "[e:anger][c:r]Your theatrics bore me."
+        ],
+        [
+          "[e:anger][c:r]Your crew does not aid you,",
+          "[e:anger][c:r]in your moments of undeath.",
+          "[e:anger][c:r]Do you feel that [w:1]betrayal?"
+        ]
+      ]
+    },
+    {
+      "eventName": "OnBecomeSelectableNegative",
+      "mainLines": [
+        "[e:neutral]I do not fear this.",
+        "[e:neutral]If others shrink back,",
+        "[e:neutral]I will [w:05]step forward."
+      ],
+      "repeatLines": [
+        [
+          "[e:neutral]I will take the blow."
+        ],
+        [
+          "[e:neutral]If I go, you must win."
+        ],
+        [
+          "[e:neutral]You may continue without me."
+        ]
+      ]
+    },
+    {
+      "eventName": "OnSacrificed",
+      "mainLines": [
+        "[e:surprise]Wh- Wait!"
+      ],
+      "repeatLines": [
+        [
+          "[e:quiet]Irons..."
+        ],
+        [
+          "[e:quiet]Artos..."
+        ],
+        [
+          "[e:quiet]Astrella..."
+        ]
+      ]
+    },
+    {
+      "eventName": "OnSelectedForDeckTrial",
+      "mainLines": [
+        "[e:surprise]What is [w:1]this?",
+        "[e:laughter]How odd! ",
+        "[e:laughter]I am very curious."
+      ],
+      "repeatLines": [
+        [
+          "[e:laughter]Let us do this, friend!"
+        ],
+        [
+          "You can succeed, friend."
+        ]
+      ]
+    },
+    {
+      "eventName": "OnSelectedForCardRemove",
+      "mainLines": [
+        "[e:neutral]I will go, friend.",
+        "[e:neutral]It will lighten your load."
+      ],
+      "repeatLines": [
+        [
+          "[e:neutral]Friend, you may pick me."
+        ],
+        [
+          "[e:neutral]Place your burdens",
+          "[e:neutral]upon my shoulders.",
+          "[e:neutral]I will carry them until my soul fizzles out."
+        ]
+      ]
+    }
+  ]
+}
